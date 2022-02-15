@@ -32,13 +32,16 @@ def find_char(myChar):
 print("#s: ",find_char("#"))
 print("# position:",position)
 #Fill the row with "x"
+print(len(position),len(mines[position[0]]))
 for i in range(0,len(position),2):
-    for j in range(len(mines[position[0]])):
+    #for j in range(len(mines[position[i]])):
+    for j in range(int(input_w)):
         mines[position[i]][j] = "x"
 
 #Fill the column with "x"
 for j in range(1,len(position),2):
-    for i in range(len(mines[position[1]])):
+    #for i in range(len(mines[position[j]])):
+    for i in range(int(input_h)):
         mines[i][position[j]] = "x"
 
 print_arr()
