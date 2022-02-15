@@ -1,5 +1,15 @@
 #input array
-bomb = [["#",".",".","."],[".",".",".","."],[".",".",".","."],[".",".",".","."]]
+input_h=int(input())
+input_w=int(input())
+bomb=[]
+for i in range(input_h):
+    vec=[]    
+    for j in range(input_w):
+        elem=input()
+        vec.append(elem)
+    bomb.append(vec)
+
+#bomb = [["#",".",".","."],[".",".",".","."],[".",".",".","."],[".",".",".","."]]
 position= []
 def print_arr():
     for i in range(len(bomb)):
