@@ -1,15 +1,16 @@
 #input array
-input_h=int(input())
-input_w=int(input())
+#bomb = [["#",".",".","."],[".",".",".","."],[".",".",".","."],[".",".",".","."]]
+
+#Paiza's input format
+input_h,input_w=input().split(" ")
+
 bomb=[]
-for i in range(input_h):
+for i in range(int(input_h)):
     vec=[]    
-    for j in range(input_w):
-        elem=input()
-        vec.append(elem)
+    #for j in range(int(input_w)):
+    vec=input().split()
     bomb.append(vec)
 
-#bomb = [["#",".",".","."],[".",".",".","."],[".",".",".","."],[".",".",".","."]]
 position= []
 def print_arr():
     for i in range(len(bomb)):
@@ -27,7 +28,7 @@ def find_char(myChar):
                 kount=kount+1
     return kount
 
-print_arr()
+#print_arr()
 print("#s: ",find_char("#"))
 print("# position:",position)
 #Fill the row with "x"
