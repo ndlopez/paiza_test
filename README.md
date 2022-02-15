@@ -25,6 +25,7 @@ The code will search for the "#" inputs and save their position (i,j)
 With that info, replace "#" and corresponding "."s by another char, say "x". Finally, count how many "x"s are in the 2D array.
 
 Output:
+
 	x x x x 
 	x . x . 
 	x x x x 

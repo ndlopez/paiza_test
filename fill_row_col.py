@@ -6,9 +6,11 @@ input_h,input_w=input().split(" ")
 
 mines=[]
 for i in range(int(input_h)):
-    vec=[]    
-    #for j in range(int(input_w)):
-    vec=input().split()
+    vec=[]
+    myStr=input()
+    for j in range(int(input_w)):
+        #As long as the user inputs same len(myStr) as input_w
+        vec.append(myStr[j])
     mines.append(vec)
 
 position= []
@@ -17,8 +19,9 @@ def print_arr():
         for j in range(len(mines[i])):
             print(mines[i][j],end=" ")
         print()
-#Search for "#" char, save position and count 
+
 def find_char(myChar):
+    '''Search for "#" char, save position and count'''
     kount=0
     for i in range(len(mines)):
         for j in range(len(mines[i])):
@@ -31,8 +34,8 @@ def find_char(myChar):
 #print_arr()
 print("#s: ",find_char("#"))
 print("# position:",position)
+
 #Fill the row with "x"
-print(len(position),len(mines[position[0]]))
 for i in range(0,len(position),2):
     #for j in range(len(mines[position[i]])):
     for j in range(int(input_w)):
