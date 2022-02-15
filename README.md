@@ -15,20 +15,20 @@ Then, input elements of the array
 
 e.g.: rows go up to len(W) and columns go up to len(H)
 
-# . # .
-. . . .
-. . # .
-. . . .
+      # . # .
+      . . . .
+      . . # .
+      . . . .
 
 The code will search for the "#" inputs and save their position (i,j)
 
 With that info, replace "#" and corresponding "."s by another char, say "x". Finally, count how many "x"s are in the 2D array.
 
 Output:
-x x x x 
-x . x . 
-x x x x 
-x . x . 
-count 12
+	x x x x 
+	x . x . 
+	x x x x 
+	x . x . 
+	count 12
 
 
