@@ -32,6 +32,22 @@ Output:
 	x . x . 
 	count 12
 
+## Project D04 Replace "at" by "@"
+
+File **replace_val.py**
+
+Given a string, search for "at" word and replace it by "@" char.
+
+### solution
+
+Working code available [here](https://replit.com/@ndzerglink/ReplaceValue#main.py)
+
+	input=atpaizaattest
+	['a', 't', 'p', 'a', 'i', 'z', 'a', 'a', 't', 't', 'e', 's', 't']
+	['@', '', 'p', 'a', 'i', 'z', 'a', '@', '', 't', 'e', 's', 't']
+	output:
+	@paiza@test
+
 ---
 Environment:
 
