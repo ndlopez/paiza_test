@@ -19,7 +19,10 @@ count=0
 for i in range(0,len(position),2):
     for j in range(len(bomb[position[0]])):
         bomb[position[i]][j] = "x"
+        if j == position[i]:
+            count = count - 1
         count = count + 1
+
 #Fill the column with "x"
 for j in range(1,len(position),2):
     for i in range(len(bomb[position[1]])):
