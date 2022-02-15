@@ -48,6 +48,11 @@ Working code available [here](https://replit.com/@ndzerglink/ReplaceValue#main.p
 	output:
 	@paiza@test
 
+## Project B104:データのクレンジング
+
+Given the input, result of a questionnaire, output the average.
+
+File: **data_clean.py**
 ---
 Environment:
 
