@@ -4,9 +4,11 @@
 
 Time to complete: 36min
 
-Input desired size of 2D array (H,W).
+Given the position of a "#" char in the array, replace/delete the other elements in the column and row. Count the number of elements replaced/deleted in the array.
 
-Then, input elements of the array.
+Requirements:
+
+Input desired size of 2D array (H,W). Then, input elements of the array.
 
 e.g.: if H=rows=4 and W=cols=4, then
 
@@ -18,9 +20,7 @@ e.g.: if H=rows=4 and W=cols=4, then
 
 ### solution
 
-The code searches for the "#" input and saves its position (i,j) in a new array.
-
-With that info, replace "#" and corresponding "."s by another char, say "x" in the column and row. Finally, count how many "x"s are in the modified 2D array.
+The code first searches for the "#" input and saves its position (i,j) in a new array. With that info, replace "#" and corresponding "."s by another char, say "x" in the column and row. Finally, count how many "x"s are in the modified 2D array.
 
 Output:
 
@@ -28,7 +28,7 @@ Output:
 	x . x . 
 	x x x x 
 	x . x . 
-	count 12
+	12
 
 File **fill_row_col.py**
 
@@ -40,23 +40,24 @@ Given a string, search for "at" word and replace it by "@" char.
 
 Working code available [here](https://replit.com/@ndzerglink/ReplaceValue#main.py)
 
-	input=atpaizaattest
+	atpaizaattest
 	['a', 't', 'p', 'a', 'i', 'z', 'a', 'a', 't', 't', 'e', 's', 't']
 	['@', '', 'p', 'a', 'i', 'z', 'a', '@', '', 't', 'e', 's', 't']
-	output:
+	
 	@paiza@test
 
 File **replace_val.py**
 
 ## Project B104:データのクレンジング
 
-Given the input, result of a survey, output the average.
+Given the input, output the average.
 
-      N M
-      s_{1,1} s_{1,2} ... s_{1,M}
-      s_{2,1} s_{2,2} ... s_{2,M}
-      ...
-      s_{N,1} s_{N,2} ... s_{N,M}
+N M
+
+|s_{1,1} |s_{1,2}| ... |s_{1,M}|
+|s_{2,1} |s_{2,2}| ... |s_{2,M}|
+|...|||
+|s_{N,1} |s_{N,2}| ... |s_{N,M}|
 
 Where: N= number of surveyed people, M = number of questions,
 s_{i,j} answer (number, string). If s_{i,j} > 100 should be considered as string. The result should be the average of the input numbers.
@@ -78,9 +79,31 @@ Output:
 
 ### solution
 
-Identify whether the input is a number or not with _Python's: isnumeric()_ function, then count those that meet this req and store in an 1D array, together with the sum. The result has to meet the requirements of paiza, all outputs are integers.
+Identify whether the input is a number or not with Python's: _isnumeric()_ function, then count those that meet this requirement and store them in a 1D array, together with the accumulated sum. The result meets the requirements of paiza, all outputs are integers.
 
 File: **data_clean.py**
+
+## Project B015 7-segment display
+
+Representation of a number in a 7-segment display.
+
+	___
+	|-|
+	|-|	= 0
+	___
+
+In text it will be represented as: 
+
+Representation:  1 1 1 1 1 1 0
+
+index:           1 2 3 4 5 6 7
+
+Given two inputs return correct "Yes" or incorrect "No" for the following cases:
+
+1. Both inputs represent numbers.
+2. By mirroring their positions they both represent numbers.
+3. By rotating their positions they both represent numbers.
+
 ---
 Environment:
 

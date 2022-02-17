@@ -1,0 +1,29 @@
+#define 7 segment numbers
+'''
+  zero="1111110"
+  one="0110000"
+  two="1101101"
+  three="1111001"
+  four="0110011"
+  five="1011011"
+  six="1011111"
+  sieben="1110010"
+  eight="1111111"
+  nine="1111011"
+'''
+sieb_seg=["1111110","0110000","1101101","1111001","0110011","1011011","1011111","1110010","1111111","1111011"]
+
+left_num="1111011"
+right_num="0110000"
+
+answer=[0,0]
+for elem in sieb_seg:
+    if left_num == elem:
+        answer[0]=0
+    else:
+        answer[0]=1
+    if right_num == elem:
+        answer[1]=0
+    else:
+        answer[1]=1
+print(answer)
