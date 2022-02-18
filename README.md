@@ -132,6 +132,46 @@ File **sieben_seg.py**
 
 Click [here](https://prnt.sc/4aSQXTvrxXpb) to see score.
 
+## B032:デジタル計算機
+
+そろばんでの足し算をシミュレーションするプログラムを書
+
+Based on the input (size of object) build a digital abaqus to add up two numbers.
+
+Input:
+
+	6
+	**|***
+	||*|||
+	======
+	*|*|*|
+	****|*
+	******
+	**|***
+	|*****
+	**|***
+	||*|||
+	======
+	||*|*|
+	****|*
+	******
+	**|***
+	******
+
+Output:
+
+	**|***
+	||*|||
+	======
+	***|*|
+	*||***
+	****|*
+	******
+	|*****
+## solution
+
+Currently working on the algorithm. Since I have never used an abaqus, I don't know how this thing works. Better check [Wikipedia](https://ja.wikipedia.org/wiki/%E3%81%9D%E3%82%8D%E3%81%B0%E3%82%93).
+
 ---
 Environment:
 

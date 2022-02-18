@@ -7,7 +7,7 @@
 # if not: git init
 #
 msg=$1
-gir rm *~
+git rm *~
 git add *
 git commit -m $msg
 git push -u origin main
