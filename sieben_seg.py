@@ -13,8 +13,13 @@
 '''
 sieb_seg=["1111110","0110000","1101101","1111001","0110011","1011011","1011111","1110010","1111111","1111011"]
 
-leftN="1111011"
-rightN="0110000"
+#leftN="0000110" #"1111011"
+#rightN="1101111" #"0110000"
+leftN=input().split()
+rightN=input().split()
+
+leftN="".join(leftN)
+rightN="".join(rightN)
 
 def search_num(left_num,right_num):
     answer=[-1,-1]
@@ -51,10 +56,42 @@ for num in rightN:
 for num in leftN:
     LN.append(num)
     
-aux=RN[1]
-RN[1]=RN[5]
-RN[5]=aux
-aux=RN[2]
-RN[2]=RN[4]
-RN[4]=aux
-print(rightN,RN)
+def mirror_arr(vec):
+    aux=vec[1]
+    vec[1]=vec[5]
+    vec[5]=aux
+    aux=vec[2]
+    vec[2]=vec[4]
+    vec[4]=aux
+    numStr=""
+    for i in vec:
+        numStr=numStr+i
+    return numStr
+
+#replace
+def rotate_arr(vec):
+    aux=vec[0]
+    vec[0]=vec[3]
+    vec[3]=aux
+    aux=vec[1]
+    vec[1]=vec[2]
+    vec[2]=aux
+    aux=vec[4]
+    vec[4]=vec[5]
+    vec[5]=aux
+    numStr=""
+    for i in vec:
+        numStr=numStr+i
+    return numStr
+
+#print(leftN,mirror_arr(LN))
+#print(leftN,rotate_arr(LN))
+
+mirrL=mirror_arr(LN)
+mirrR=mirror_arr(RN)
+
+rotL=rotate_arr(LN)
+rotR=rotate_arr(RN)
+
+search_num(mirrR,mirrL)
+search_num(rotR,rotL)

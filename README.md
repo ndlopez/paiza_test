@@ -87,10 +87,10 @@ File: **data_clean.py**
 
 Representation of a number in a 7-segment display.
 
-	___
-	|-|
-	|-|	= 0
-	___
+	- 1 -
+	1 - 1
+	1 - 1	represents number "0"
+	- 1 -
 
 In text it will be represented as: 
 
@@ -98,11 +98,29 @@ Representation:  1 1 1 1 1 1 0
 
 index:           1 2 3 4 5 6 7
 
-Given two inputs return correct "Yes" or incorrect "No" for the following cases:
+Given two inputs return "Yes" or "No" for the following cases:
 
-1. Both inputs represent numbers.
-2. By mirroring their positions they both represent numbers.
-3. By rotating their positions they both represent numbers.
+1. Both inputs must represent numbers.
+2. By mirroring their positions they both must represent numbers.
+3. By rotating their positions they both must represent numbers.
+
+### Example
+Input: 
+
+	0 0 0 0 1 1 0
+	1 1 0 1 1 1 1
+
+Output:
+	
+	No
+	Yes
+	No
+
+### solution
+
+First, list all the numbers (0~9), in text format, in an array. Then build a function to make string comparison and return "Yes"/"No" depending of the match. Next, mirror the positions and call the function that finds the match and return the answer. Finally, build another function to rotate the positions and return also the answer. 
+
+File **sieben_seg.py**
 
 ---
 Environment:
