@@ -46,16 +46,13 @@ def search_num(left_num,right_num):
 
 search_num(leftN,rightN)
 
-#symmetry rotation of input
-#leftN[2] <-> leftN[6], leftN[3] <-> leftN[5]
-#rightN <-> leftN
-#convert str to arrays
 LN,RN=[],[]
 for num in rightN:
     RN.append(num)
 for num in leftN:
     LN.append(num)
-    
+
+#symmetry of input   
 def mirror_arr(vec):
     aux=vec[1]
     vec[1]=vec[5]
@@ -68,7 +65,7 @@ def mirror_arr(vec):
         numStr=numStr+i
     return numStr
 
-#replace
+#rotation of input
 def rotate_arr(vec):
     aux=vec[0]
     vec[0]=vec[3]

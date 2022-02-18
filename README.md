@@ -2,21 +2,19 @@
 
 ## Project: B096 爆弾の大爆発
 
-Time to complete: 36min
-
 Given the position of a "#" char in the array, replace/delete the other elements in the column and row. Count the number of elements replaced/deleted in the array.
 
-Requirements:
+Challenge:
 
 Input desired size of 2D array (H,W). Then, input elements of the array.
 
-e.g.: if H=rows=4 and W=cols=4, then
+e.g.: if H=rows=4 and W=cols=5, then
 
-      4 4
-      #.#.
-      ....
-      ..#.
-      ....
+      4 5
+      #.#..
+      .....
+      ..#..
+      .....
 
 ### solution
 
@@ -24,17 +22,17 @@ The code first searches for the "#" input and saves its position (i,j) in a new 
 
 Output:
 
-	x x x x 
-	x . x . 
-	x x x x 
-	x . x . 
-	12
+	x x x x x 
+	x . x . .
+	x x x x x
+	x . x . .
+	14
 
 File **fill_row_col.py**
 
 ## Project D04 Replace "at" by "@"
 
-Given a string, search for "at" word and replace it by "@" char.
+Given any word that contains "at", search for "at" word and replace it by "@" char.
 
 ### solution
 
@@ -89,18 +87,27 @@ Representation of a number in a 7-segment display.
 
 	- 1 -
 	1 - 1
-	1 - 1	represents number "0"
+	- 0 -	represents number "0"
+	1 - 1
 	- 1 -
 
-In text it will be represented as: 
+index position:           
 
-Representation:  1 1 1 1 1 1 0
+	- 1 -
+	6 - 2
+	- 7 -
+	5 - 3
+	- 4 -
 
-index:           1 2 3 4 5 6 7
+The user will input as:
+ 
+	1 1 1 1 1 1 0
 
-Given two inputs return "Yes" or "No" for the following cases:
+Challenge
 
-1. Both inputs must represent numbers.
+Given two user inputs return "Yes" or "No" for the following cases:
+
+1. Both inputs must represent numbers in the 7-segment display.
 2. By mirroring their positions they both must represent numbers.
 3. By rotating their positions they both must represent numbers.
 
@@ -110,8 +117,7 @@ Input:
 	0 0 0 0 1 1 0
 	1 1 0 1 1 1 1
 
-Output:
-	
+Output:	
 	No
 	Yes
 	No
@@ -121,6 +127,10 @@ Output:
 First, list all the numbers (0~9), in text format, in an array. Then build a function to make string comparison and return "Yes"/"No" depending of the match. Next, mirror the positions and call the function that finds the match and return the answer. Finally, build another function to rotate the positions and return also the answer. 
 
 File **sieben_seg.py**
+
+### Result from paiza.jp
+
+Click [here](https://prnt.sc/4aSQXTvrxXpb) to see score.
 
 ---
 Environment:
