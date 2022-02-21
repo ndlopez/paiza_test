@@ -170,7 +170,7 @@ Output:
 	|*****
 ## solution
 
-Currently working on the algorithm. Since I have never used an abaqus, I don't know how this thing works. Better check [Wikipedia](https://ja.wikipedia.org/wiki/%E3%81%9D%E3%82%8D%E3%81%B0%E3%82%93).
+Currently working on the algorithm. Since I have never used an abaqus, I don't know how it thing works. On [Wikipedia](https://ja.wikipedia.org/wiki/%E3%81%9D%E3%82%8D%E3%81%B0%E3%82%93) there's information I need, such as how the 0~9 numbers are represented and how to add up, subtract and multiply.
 
 ---
 Environment:
