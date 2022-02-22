@@ -17,9 +17,27 @@ From Wikipedia:
 1 1 0 1 1 1 1 0 1 1
 1 1 1 0 1 1 1 1 0 1
 1 1 1 1 0 1 1 1 1 0
+
+e.g.:
+110111
+001000
+======
+101010
+111101
+111111
+110111
+011111
+110111
+001000
+======
+001010
+111101
+111111
+110111
+111111
 '''
-num=["10=01111","10=10111","10=11011","10=11101","10=11110","01=01111","01=10111","01=11011","01=11101","01=11110"]
-w=6 #int(input()) #width of abaqus, 6 digits
+NUM=["*|=|****","*|=*|***","*|=**|**","*|=***|*","*|=****|","|*=|****","|*=*|***","|*=**|**","|*=***|*","|*=****|"]
+w=int(input()) #width of abaqus, 6 digits
 eight=8
 auxNum=[]
 for k in range(2):#2 sets of numbers
@@ -28,26 +46,37 @@ for k in range(2):#2 sets of numbers
         newArr.append("")
 
     for j in range(eight):
-        inStr=input() #"110111"
+        inStr=input() # 110111
         for i in range(w):
             aux=newArr[i]
             newArr[i]=aux+inStr[i]
 
-    buildNum=[]
+    buildNum=""
     for j in range(len(newArr)):
-        for i in range(len(num)):
-            if newArr[j] == num[i]:
-                buildNum.append(i)
+        for i in range(len(NUM)):
+            if newArr[j] == NUM[i]:
+                buildNum = buildNum + str(i)
 
     auxNum.append(buildNum)
 
-print(auxNum)
-newStrArr=[]
-jdx=0
-for item in auxNum:
-    for i in item:
-        aux=i
-        newStrArr[jdx]=aux
-    jdx=jdx+1
+#add up elements
+sum=0
+for number in auxNum:
+    sum = sum + int(number)
+#print(sum)
+auxNum=[]
+for i in str(sum):
+    auxNum.append(i)
+#print("Sum: ",auxNum)
+newArr=[]
+for number in auxNum:
+    myStr=NUM[int(number)] #find_num(int(number))
+    newArr.append(myStr)
 
-print(newStrArr)
+#print(newArr)
+for i in range(eight):
+    auxStr=""
+    for elem in newArr:
+        auxStr=auxStr + elem[i]
+        
+    print(auxStr)

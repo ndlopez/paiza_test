@@ -170,7 +170,15 @@ Output:
 	|*****
 ## solution
 
-Currently working on the algorithm. Since I have never used an abaqus, I don't know how it thing works. On [Wikipedia](https://ja.wikipedia.org/wiki/%E3%81%9D%E3%82%8D%E3%81%B0%E3%82%93) there's information I need, such as how the 0~9 numbers are represented and how to add up, subtract and multiply.
+Since I have never used an abaqus, I don't know how it works, on [Wikipedia](https://ja.wikipedia.org/wiki/%E3%81%9D%E3%82%8D%E3%81%B0%E3%82%93) there's information about how the 0~9 numbers are represented and how to add up, subtract and multiply.
+
+In any way, I will only identify the input and compare it with its respective representation. Then add up both inputs and the output will like this:
+
+Sum:  ['4', '1', '6', '0', '2', '0']
+
+Those numbers in fact represent the index of the base matrix. The only thing left to do is print those corresponding index strings in vertical.
+
+File: **abaqus.py**
 
 ---
 Environment:
