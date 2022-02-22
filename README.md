@@ -180,6 +180,10 @@ Those numbers in fact represent the index of the base matrix. The only thing lef
 
 File: **abaqus.py**
 
+### Result from paiza.jp
+
+Click [here](https://prnt.sc/Pq19Zf76N75j) to see score.
+
 ---
 Environment:
 
