@@ -18,35 +18,18 @@ From Wikipedia:
 1 1 1 0 1 1 1 1 0 1
 1 1 1 1 0 1 1 1 1 0
 
-e.g.:
-110111
-001000
-======
-101010
-111101
-111111
-110111
-011111
-110111
-001000
-======
-001010
-111101
-111111
-110111
-111111
 '''
 NUM=["*|=|****","*|=*|***","*|=**|**","*|=***|*","*|=****|","|*=|****","|*=*|***","|*=**|**","|*=***|*","|*=****|"]
-w=int(input()) #width of abaqus, 6 digits
-eight=8
+w=int(input()) #abaqus width, figure size
+EIGHT=8
 auxNum=[]
 for k in range(2):#2 sets of numbers
     newArr=[]
     for i in range(w):
         newArr.append("")
 
-    for j in range(eight):
-        inStr=input() # 110111
+    for j in range(EIGHT):
+        inStr=input() # **|***
         for i in range(w):
             aux=newArr[i]
             newArr[i]=aux+inStr[i]
@@ -63,17 +46,17 @@ for k in range(2):#2 sets of numbers
 sum=0
 for number in auxNum:
     sum = sum + int(number)
-#print(sum)
+
 auxNum=[]
 for i in str(sum):
     auxNum.append(i)
 #print("Sum: ",auxNum)
 newArr=[]
 for number in auxNum:
-    myStr=NUM[int(number)] #find_num(int(number))
+    myStr=NUM[int(number)]
     newArr.append(myStr)
 
-#print(newArr)
+#format result
 for i in range(eight):
     auxStr=""
     for elem in newArr:

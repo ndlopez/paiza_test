@@ -7,7 +7,14 @@
 # if not: git init
 #
 msg=$1
-git rm *~
+gitDir=".git"
+if [ ! -d $gitDir ];then
+	git init
+else
+	echo "Adding and Committing to ur repo..."
+fi
+git rm *~ *#
 git add *
 git commit -m $msg
 git push -u origin main
+git status
