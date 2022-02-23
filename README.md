@@ -184,6 +184,44 @@ File: **abaqus.py**
 
 Click [here](https://prnt.sc/Pq19Zf76N75j) to see score.
 
+# A021 海岸線 再チャレンジ採点結果
+
+Based on input map, find the Area and Perimeter of all the islands. Diagonal islands are not counted. Sort them by Area and Perimeter size.
+
+Input is given as:
+
+	H W
+	s_1
+	s_2
+	.
+	.
+	.
+	s_H
+
+Where: H is the height of the map, W is the width. s\_1, ..., s\_H are the string representations where the island might be.
+
+Example:
+
+	4 4
+	....
+	.#..
+	..#.
+	....
+
+Here **#** represents the island and **.** represents the surrounding env.(probably water).
+
+Output:
+
+	1 4
+	1 4
+
+These mean, there are two islands, in diagonal. The area of each island is 1 and its perimeter is 4.
+
+## Solution
+The challenge was already taken by another user, provided solution **A021.cpp** so it was timed-out. In any way I decided to take the challenge and find another solution.
+
+By searching all the islands position, the perimeter can be calculated. But, how can find those that are on the same row or column...
+
 ---
 Environment:
 
