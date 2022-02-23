@@ -1,0 +1,17 @@
+=begin
+Find the Area and Perimeter of an island
+
+input:
+4 4
+....
+.#..
+..#.
+....
+output:
+1 4
+1 4
+
+=end
+H=input()
+W=input()
+print H,W
