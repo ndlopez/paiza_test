@@ -13,7 +13,7 @@ if [ ! -d $gitDir ];then
 else
 	echo "Adding and Committing to ur repo..."
 fi
-git rm *~ *#
+rm *~ *#
 git add *
 git commit -m $msg
 git push -u origin main
