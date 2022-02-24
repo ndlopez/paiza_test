@@ -18,15 +18,15 @@ aStr=""
 #to avoid problems with walls
 #better to extend the size of the map
 k=0
+
 newW=W.to_i
-#puts newW
 newW+=2
-#puts newW
+
 while k < newW
   aStr += "."
   k+=1
 end
-#puts aStr
+
 map << aStr
 $i=0
 while $i < H.to_i
@@ -59,7 +59,6 @@ end
 print pos
 puts ""
 def calc_perim(data,row,col)
-  #map[$i].delete("\n")
   count=0
     
   if data[row-1][col]  == "." #above
@@ -75,10 +74,12 @@ def calc_perim(data,row,col)
     count+=1
   end
   
-  puts count
+  print count
 end
 oup=pos.length/2 -1
 #puts oup
-for i in 0..oup
-  calc_perim(map,pos[i+i],pos[i+i+1])
+for k in 0..oup
+  print "1 "
+  calc_perim(map,pos[k+k],pos[k+k+1])
+  puts ""
 end
