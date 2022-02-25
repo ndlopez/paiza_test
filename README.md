@@ -222,7 +222,15 @@ The challenge was already taken by another user, provided solution **A021.cpp** 
 
 By searching all the islands position, the perimeter can be calculated. But, how to find those that are on the same row or column.
 
-Decided to challenge in Ruby. What a challenge this language is.
+Decided to challenge it in Ruby!
+
+Many difficulties found. Thus far when islands are in diagonal the area and perimeter are returned just fine. However, when, they are not ... 
+
+# Wordle
+
+By using Python's *english_words* module search and return only those words with *length = 5* 
+
+Almost working code is available [here](https://replit.com/@ndzerglink/findword#main.py)
 
 ---
 Environment:
