@@ -224,13 +224,50 @@ By searching all the islands position, the perimeter can be calculated. But, how
 
 Decided to challenge it in Ruby!
 
-Many difficulties found. Thus far when islands are in diagonal the area and perimeter are returned just fine. However, when, they are not ... 
+Thus far, lots of difficulties found. For instance when islands are in diagonal the area and perimeter are returned just fine. However, when, they are on the same row or column the output returns for each island, not the total area and perimeter of it.
 
-# Wordle
+Example:
+
+	4 4
+	#...
+	#...
+	....
+	....
+
+	[1, 1, 2, 1]
+	[2, 3]
+	[0, 3]	 
+
+The correct output should have been:
+
+	[1, 1, 2, 1]
+	[2,6]
+
+# Wordle Challenge
+
+Attempt to make "wordle" less funny.
 
 By using Python's *english_words* module search and return only those words with *length = 5* 
 
+List 5-letter words from the English dictionary.
+
+Input only those letters marked in **grey** in *wordle* <br>
+If the last is marked in **green** can be input too.
+
 Almost working code is available [here](https://replit.com/@ndzerglink/findword#main.py)
+
+At run-time this is the menu :
+
+	1 : Random 5-letter word
+	2 : Exclude these letters
+	3 : List only words ending with
+	Option Number?: 
+
+Output:
+
+	Input letters not in the word: v i d b r
+	Position and letter: 1 c
+	canoe clank calla camel cause cleft can't cycle congo cease chuck clown clash chaos chomp colon cloak coyly cluck catch chang chunk cheek cotta coupe chasm chess csnet clomp clock class count close cheat calyx chalk coast clung cohen chute clump cocky chump costa chloe clout coypu coney cotty cajun clamp chant chewy chose cathy colza cetus casey cooky chuff canto cowan cameo clone canon clang couch canny cosec cagey chaff cloth conch caste champ coach comet coset cleat chest clasp cuzco cough chock canna cacao chase comma cheap canal chafe cache claus cozen cooke culpa check caulk cocoa czech choke clean 102
 
 ---
 Environment:

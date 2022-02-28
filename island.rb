@@ -60,7 +60,7 @@ print pos
 puts ""
 def calc_perim(data,row,col)
   count=0
-  sum=0    
+  sum=0
   if data[row-1][col]  == "." #above
     count+=1
     sum+=1
@@ -83,7 +83,7 @@ end
 oup=pos.length/2 -1
 #puts oup
 for k in 0..oup
-  print "1 "
+  #print "1 "
   print calc_perim(map,pos[k+k],pos[k+k+1])
   puts ""
 end
