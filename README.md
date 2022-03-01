@@ -234,29 +234,24 @@ Example:
 	....
 	....
 
-	[1, 1, 2, 1]
 	[2, 3]
 	[0, 3]	 
 
 The correct output should have been:
 
-	[1, 1, 2, 1]
 	[2,6]
 
 # Wordle Challenge
 
-Attempt to make "wordle" less funny.
+Attempt to make "wordle" less challenging.
 
 By using Python's *english_words* module search and return only those words with *length = 5* 
 
-List 5-letter words from the English dictionary.
+If already in the *wordle page*, then input only those letters marked in **grey**<br> If any position is marked in **green** it is possible to input too.
 
-Input only those letters marked in **grey** in *wordle* <br>
-If the last is marked in **green** can be input too.
+Working code is available on [my Repl.it](https://replit.com/@ndzerglink/findword#main.py)
 
-Almost working code is available [here](https://replit.com/@ndzerglink/findword#main.py)
-
-At run-time this is the menu :
+At run-time this is the menu:
 
 	1 : Random 5-letter word
 	2 : Exclude these letters
@@ -265,9 +260,11 @@ At run-time this is the menu :
 
 Output:
 
-	Input letters not in the word: v i d b r
-	Position and letter: 1 c
-	canoe clank calla camel cause cleft can't cycle congo cease chuck clown clash chaos chomp colon cloak coyly cluck catch chang chunk cheek cotta coupe chasm chess csnet clomp clock class count close cheat calyx chalk coast clung cohen chute clump cocky chump costa chloe clout coypu coney cotty cajun clamp chant chewy chose cathy colza cetus casey cooky chuff canto cowan cameo clone canon clang couch canny cosec cagey chaff cloth conch caste champ coach comet coset cleat chest clasp cuzco cough chock canna cacao chase comma cheap canal chafe cache claus cozen cooke culpa check caulk cocoa czech choke clean 102
+	Input letters not in the word: b o z s t a v
+	Position and letter: 5 e
+	passe sieve engle midge etude crane levee steve tithe stave title chine cause lance lethe argue chide lycee reave clive ankle guise sprue agree rupee aware cadre cycle lathe niece wedge grape
+
+BTW, [Wordle #255](https://www.wordle.name/en/255/) was *RUPEE*
 
 ---
 Environment:
