@@ -220,7 +220,7 @@ These mean, there are two islands, in diagonal. The area of each island is 1 and
 ## Solution
 The challenge was already taken by another user, provided solution **A021.cpp** so it was timed-out. In any way I decided to take the challenge and find another solution.
 
-By searching all the islands position, the perimeter can be calculated. But, how to find those that are on the same row or column.
+By searching all the islands position, the perimeter can be calculated. But, how to find those that are on the same row or column?
 
 Decided to challenge it in Ruby!
 
@@ -240,6 +240,8 @@ Example:
 The correct output should have been:
 
 	[2,6]
+
+The solution is still under way.
 
 # Wordle Challenge
 
@@ -269,9 +271,9 @@ BTW, [Wordle #255](https://www.wordle.name/en/255/) was *RUPEE*
 ---
 Environment:
 
-OS: Linux Fedora 24
+OS: Linux Fedora 34
 
-Language: Python3
+Language: Python3.8
 
 Editor: Emacs
 
